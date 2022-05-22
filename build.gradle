@@ -32,13 +32,13 @@ dependencies {
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
     testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
     testImplementation 'org.apache.commons:commons-lang3:3.11'
-    testImplementation 'org.testng:testng:7.1.0'
+
 }
 
 test {
     useJUnitPlatform()
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
-    systemProperty "dbUrl", System.getProperty("dbUrl")
-    systemProperty "dbUser", System.getProperty("dbUser", "user")
-    systemProperty "dbPass", System.getProperty("dbPass", "pass")
+//    systemProperty "dbUrl", System.getProperty("jdbc.url")
+//    systemProperty "dbUser", System.getProperty("jdbc.user", "user")
+//    systemProperty "dbPass", System.getProperty("jdbc.password", "pass")
 }

@@ -8,9 +8,9 @@
 * 30 тест-кейсов для покупки тура в кредит
 
 ### Скриншоты
-![скриншот](AllureReport.JPG)
+![скриншот](https://github.com/KateDenis/qa-diploma/blob/master/pic/AllureReport.JPG)
 
-![скриншот](GradleTestReport.JPG)
+![скриншот](https://github.com/KateDenis/qa-diploma/blob/master/pic/GradleTestReport.JPG)
 
 ### Рекомендации
 Текущая версия тестируемого приложения не готова к релизу из-за большого количества  [багов](https://github.com/KateDenis/qa-diploma/issues)

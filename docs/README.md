@@ -4,9 +4,9 @@
 
 ## Документация
 
-[План автоматизации](https://github.com/KateDenis/qa-diploma/blob/master/docs/Plan.md)
-[Отчет о тестировании](https://github.com/KateDenis/qa-diploma/blob/master/docs/Report.md)
-[Отчет об автоматизации](https://github.com/KateDenis/qa-diploma/blob/master/docs/Summary.md)
+* [План автоматизации](https://github.com/KateDenis/qa-diploma/blob/master/docs/Plan.md)
+* [Отчет о тестировании](https://github.com/KateDenis/qa-diploma/blob/master/docs/Report.md)
+* [Отчет об автоматизации](https://github.com/KateDenis/qa-diploma/blob/master/docs/Summary.md)
 
 
 ## Описание приложения

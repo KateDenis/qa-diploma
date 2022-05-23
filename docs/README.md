@@ -4,9 +4,9 @@
 
 ## Документация
 
-План автоматизации
-Отчет о тестировании
-Отчет об автоматизации
+[План автоматизации](https://github.com/KateDenis/qa-diploma/blob/master/docs/Plan.md)
+[Отчет о тестировании](https://github.com/KateDenis/qa-diploma/blob/master/docs/Report.md)
+[Отчет об автоматизации](https://github.com/KateDenis/qa-diploma/blob/master/docs/Summary.md)
 
 
 ## Описание приложения
@@ -39,21 +39,21 @@
 * DBeaver
 
 ### Запуск:
-1. Склонировать на локальный репозиторий проект и открыть его в приложении IntelliJ IDEA.
-2. В терминале IntelliJ IDEA с помощью команды docker-compose up поднять контейнер
-3. Для запуска с MySQL в файле application.properties выбрать строчку "spring.datasource.url=jdbc:mysql://localhost:3306/app", а 
-строчку "#spring.datasource.url=jdbc:postgresql://localhost:5432/app" закомментировать. В классе DBHelper также выбрать подключение для MySQL: ""jdbc:mysql://localhost:3306/app", "app", "pass"", а "jdbc:postgresql://localhost:5432/app", "app", "pass" закомментировать. 
-Для запуска с PostgreSQL совершить обратные действия.
-4. В новом окне терминала запустить приложение командой: java -jar .\aqa-shop.jar
-5. Открыть в браузере приложение по адресу: http://localhost:8080/
-6. Открыть DBeaver и создать подключение к PostgreSQL или MySQL реквизиты доступа к БД взять из docker-compose.yml (порт подключения, имя БД, пользователь, пароль)
-7. В новом окне терминала запустить тесты командой ./gradlew clean test
+1. Склонировать на локальный репозиторий проект и открыть его в приложении **IntelliJ IDEA**.
+2. В терминале **IntelliJ IDEA** с помощью команды **docker-compose up** поднять контейнер
+3. **Для запуска с MySQL** в файле application.properties выбрать строчку **"spring.datasource.url=jdbc:mysql://localhost:3306/app"**, а 
+строчку "#spring.datasource.url=jdbc:postgresql://localhost:5432/app" закомментировать. В классе **DBHelper** также выбрать подключение для MySQL: **""jdbc:mysql://localhost:3306/app", "app", "pass""**, а "jdbc:postgresql://localhost:5432/app", "app", "pass" закомментировать. 
+**Для запуска с PostgreSQL** совершить обратные действия.
+4. В новом окне терминала запустить приложение командой: **java -jar .\aqa-shop.jar**
+5. Открыть в браузере приложение по адресу: **http://localhost:8080/**
+6. Открыть **DBeaver** и создать подключение к PostgreSQL или MySQL реквизиты доступа к БД взять из **docker-compose.yml** (порт подключения, имя БД, пользователь, пароль)
+7. В новом окне терминала запустить тесты командой **./gradlew clean test**
 
 ### Формирование отчетов Allure
-* В новом окне терминала запустить формирование отчетов командой ./gradlew allureReport
+* В новом окне терминала запустить формирование отчетов командой **./gradlew allureReport**
 
 ### Завершение работы
-1. Остановить работу приложения командой Ctrl+C или закрыть окно терминала, в котором оно было запущено
-2. Остановить контейнер командой docker-compose down в окне терминала IntelliJ IDEA в котором оно было запущено
+1. Остановить работу приложения командой **Ctrl+C** или закрыть окно терминала, в котором оно было запущено
+2. Остановить контейнер командой **docker-compose down** в окне терминала IntelliJ IDEA в котором оно было запущено
 
 

@@ -42,7 +42,7 @@
 1. Склонировать на локальный репозиторий проект и открыть его в приложении **IntelliJ IDEA**.
 2. В терминале **IntelliJ IDEA** с помощью команды **docker-compose up** поднять контейнер
 3. **Для запуска с MySQL** в файле application.properties выбрать строчку **"spring.datasource.url=jdbc:mysql://localhost:3306/app"**, а 
-строчку "#spring.datasource.url=jdbc:postgresql://localhost:5432/app" закомментировать. В классе **DBHelper** также выбрать подключение для MySQL: **""jdbc:mysql://localhost:3306/app", "app", "pass""**, а "jdbc:postgresql://localhost:5432/app", "app", "pass" закомментировать. 
+строчку "#spring.datasource.url=jdbc:postgresql://localhost:5432/app" закомментировать. В файле build.gradle также выбрать подключение для MySQL: **""systemProperty "db.url", System.getProperty("db.url", "jdbc:mysql://localhost:3306/app")""**, а "systemProperty "db.url", System.getProperty("db.url", "jdbc:postgresql://localhost:5432/app")" закомментировать. 
 **Для запуска с PostgreSQL** совершить обратные действия.
 4. В новом окне терминала запустить приложение командой: **java -jar .\aqa-shop.jar**
 5. Открыть в браузере приложение по адресу: **http://localhost:8080/**

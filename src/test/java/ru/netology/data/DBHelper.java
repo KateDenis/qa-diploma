@@ -9,20 +9,13 @@ import java.sql.DriverManager;
 
 
 public class DBHelper {
-    // -P:jdbc.url=jdbc:postgresql://localhost:5432/app -P:jdbc.user=app -P:jdbc.password=pass
-    // -P:jdbc.url=jdbc:mysql://localhost:3306/app -P:jdbc.user=app -P:jdbc.password=pass
-//    private static String dbUrl = System.getProperty("jdbc.url");
-//    private static String dbUser = System.getProperty("jdbc.user");
-//    private static String dbPass = System.getProperty("jdbc.password");
-//
+    private static String dbUrl = System.getProperty("db.url");
+    private static String dbUser = System.getProperty("db.user");
+    private static String dbPass = System.getProperty("db.pass");
 
     @SneakyThrows
     private static Connection getConnection() {
-        return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/app", "app", "pass"
-//                "jdbc:postgresql://localhost:5432/app", "app", "pass"
-//        dbUrl, dbUser, dbPass
-        );
+        return DriverManager.getConnection(dbUrl, dbUser, dbPass);
     }
 
     @SneakyThrows
